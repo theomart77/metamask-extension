@@ -19,6 +19,7 @@ import extension from 'extensionizer'
 import storeTransform from 'obs-store/lib/transform'
 import asStream from 'obs-store/lib/asStream'
 import PortStream from 'extension-port-stream'
+import { captureException } from '@sentry/browser'
 import migrations from './migrations'
 import Migrator from './lib/migrator'
 import ExtensionPlatform from './platforms/extension'
@@ -118,6 +119,7 @@ initialize().catch(log.error)
  * @property {number} unapprovedDecryptMsgCount - The number of messages in unapprovedDecryptMsgs.
  * @property {Object} unapprovedTypedMsgs - An object of messages pending approval, mapping a unique ID to the options.
  * @property {number} unapprovedTypedMsgCount - The number of messages in unapprovedTypedMsgs.
+ * @property {number} pendingApprovalCount - The number of pending request in the approval controller.
  * @property {string[]} keyringTypes - An array of unique keyring identifying strings, representing available strategies for creating accounts.
  * @property {Keyring[]} keyrings - An array of keyring descriptions, summarizing the accounts that are available for use, and what keyrings they belong to.
  * @property {string} selectedAddress - A lower case hex string of the currently selected address.
@@ -279,6 +281,7 @@ function setupController(initState, initLangCode) {
         await localStore.set(state)
       } catch (err) {
         // log error so we dont break the pipeline
+        captureException(err)
         log.error('error setting state in local store:', err)
       }
     }
@@ -392,7 +395,7 @@ function setupController(initState, initLangCode) {
   controller.decryptMessageManager.on('updateBadge', updateBadge)
   controller.encryptionPublicKeyManager.on('updateBadge', updateBadge)
   controller.typedMessageManager.on('updateBadge', updateBadge)
-  controller.permissionsController.permissions.subscribe(updateBadge)
+  controller.approvalController.subscribe(updateBadge)
   controller.appStateController.on('updateBadge', updateBadge)
 
   /**
@@ -409,9 +412,7 @@ function setupController(initState, initLangCode) {
       unapprovedEncryptionPublicKeyMsgCount,
     } = controller.encryptionPublicKeyManager
     const { unapprovedTypedMessagesCount } = controller.typedMessageManager
-    const pendingPermissionRequests = Object.keys(
-      controller.permissionsController.permissions.state.permissionsRequests,
-    ).length
+    const pendingApprovalCount = controller.approvalController.getTotalApprovalCount()
     const waitingForUnlockCount =
       controller.appStateController.waitingForUnlock.length
     const count =
@@ -421,7 +422,7 @@ function setupController(initState, initLangCode) {
       unapprovedDecryptMsgCount +
       unapprovedEncryptionPublicKeyMsgCount +
       unapprovedTypedMessagesCount +
-      pendingPermissionRequests +
+      pendingApprovalCount +
       waitingForUnlockCount
     if (count) {
       label = String(count)
