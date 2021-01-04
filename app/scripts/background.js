@@ -16,8 +16,7 @@ import pump from 'pump'
 import debounce from 'debounce-stream'
 import log from 'loglevel'
 import extension from 'extensionizer'
-import storeTransform from 'obs-store/lib/transform'
-import asStream from 'obs-store/lib/asStream'
+import { storeAsStream, storeTransformStream } from '@metamask/obs-store'
 import PortStream from 'extension-port-stream'
 import { captureException } from '@sentry/browser'
 import migrations from './migrations'
@@ -250,9 +249,9 @@ function setupController(initState, initLangCode) {
 
   // setup state persistence
   pump(
-    asStream(controller.store),
+    storeAsStream(controller.store),
     debounce(1000),
-    storeTransform(versionifyData),
+    storeTransformStream(versionifyData),
     createStreamSink(persistData),
     (error) => {
       log.error('MetaMask - Persistence pipeline failed', error)
@@ -269,6 +268,8 @@ function setupController(initState, initLangCode) {
     return versionedData
   }
 
+  let dataPersistenceFailing = false
+
   async function persistData(state) {
     if (!state) {
       throw new Error('MetaMask - updated state is missing')
@@ -279,9 +280,15 @@ function setupController(initState, initLangCode) {
     if (localStore.isSupported) {
       try {
         await localStore.set(state)
+        if (dataPersistenceFailing) {
+          dataPersistenceFailing = false
+        }
       } catch (err) {
         // log error so we dont break the pipeline
-        captureException(err)
+        if (!dataPersistenceFailing) {
+          dataPersistenceFailing = true
+          captureException(err)
+        }
         log.error('error setting state in local store:', err)
       }
     }

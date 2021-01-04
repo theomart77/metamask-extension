@@ -1,5 +1,5 @@
 import { merge, omit } from 'lodash'
-import ObservableStore from 'obs-store'
+import { ObservableStore } from '@metamask/obs-store'
 import { bufferToHex, sha3 } from 'ethereumjs-util'
 import { ENVIRONMENT_TYPE_BACKGROUND } from '../lib/enums'
 import {
@@ -265,7 +265,13 @@ export default class MetaMetricsController {
     return new Promise((resolve, reject) => {
       const callback = (err) => {
         if (err) {
-          return reject(err)
+          // The error that segment gives us has some manipulation done to it
+          // that seemingly breaks with lockdown enabled. Creating a new error
+          // here prevents the system from freezing when the network request to
+          // segment fails for any reason.
+          const safeError = new Error(err.message)
+          safeError.stack = err.stack
+          return reject(safeError)
         }
         return resolve()
       }
