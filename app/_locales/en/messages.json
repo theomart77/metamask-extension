@@ -109,6 +109,10 @@
   "alertsSettingsDescription": {
     "message": "Enable or disable each alert"
   },
+  "allowCustomNetwork": {
+    "message": "Allow this site to add $1 Network?",
+    "description": "$1 will be the provided name of network or empty string"
+  },
   "allowExternalExtensionTo": {
     "message": "Allow this external extension to:"
   },
@@ -148,7 +152,7 @@
     "message": "Approval Tx Gas Cost"
   },
   "approve": {
-    "message": "Approve spend limit"
+    "message": "Approve"
   },
   "approveSpendLimit": {
     "message": "Approve $1 spend limit",

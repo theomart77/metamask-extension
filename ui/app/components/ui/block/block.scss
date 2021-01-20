@@ -1,0 +1,80 @@
+$spacings: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
+$sizes: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
+$item-alignments:
+  baseline,
+  center,
+  flex-end,
+  flex-start,
+  stretch;
+$justifications:
+  center,
+  flex-end,
+  flex-start,
+  space-around,
+  space-between,
+  space-evenly;
+
+@function get-offset($spacing, $div: 1) {
+  $spacingInPx: $spacing * 4px;
+
+  @return $spacingInPx / $div;
+}
+
+.block {
+  &--container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  &--item {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  @each $spacing in $spacings {
+    &--spacing-#{$spacing} {
+      margin: (-#{get-offset($spacing, 2)});
+      width: calc(100% + #{get-offset($spacing)});
+
+      & > .block--item {
+        padding: get-offset($spacing, 2);
+      }
+    }
+  }
+
+  @each $size in $sizes {
+    &--size-#{$size} {
+      flex-basis: math-percentage(math-round(($size / 12) * 10e7) / 10e5);
+    }
+  }
+
+  @each $alignment in $item-alignments {
+    &--align-items-#{$alignment} {
+      align-items: $alignment;
+    }
+  }
+
+  @each $justification in $justifications {
+    &--justify-content-#{$justification} {
+      justify-content: $justification;
+    }
+  }
+
+  @each $padding in $spacings {
+    &--padding-#{$padding} {
+      padding: get-offset($padding, 1);
+    }
+
+    &--padding-horizontal-#{$padding} {
+      padding-left: get-offset($padding, 1);
+      padding-right: get-offset($padding, 1);
+    }
+
+    &--padding-vertical-#{$padding} {
+      padding-top: get-offset($padding, 1);
+      padding-bottom: get-offset($padding, 1);
+    }
+  }
+}

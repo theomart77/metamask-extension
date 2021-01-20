@@ -1,0 +1,19 @@
+.confirmation-footer {
+  border-top: 2px solid $geyser;
+  padding: 16px;
+  box-shadow: 0 0 14px -1px rgba(0, 0, 0, 0.18);
+  background-color: white;
+
+  &--warning {
+    border-top-color: $alert-3;
+  }
+
+  &__actions {
+    display: flex;
+    margin-top: 16px;
+
+    & .button:first-child {
+      margin-right: 16px;
+    }
+  }
+}

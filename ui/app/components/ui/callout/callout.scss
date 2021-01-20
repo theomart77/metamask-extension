@@ -1,0 +1,12 @@
+.callout {
+  @include H7;
+
+  display: grid;
+  grid-template-columns: minmax(0, auto) 1fr;
+  grid-template-rows: 1fr;
+
+  & .info-icon {
+    margin: unset;
+    margin-right: 10px;
+  }
+}
