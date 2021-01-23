@@ -34,16 +34,16 @@
   "accountSelectionRequired": {
     "message": "¡Necesitas elegir una cuenta!"
   },
-  "active": { 
-    "message": "Activo" 
+  "active": {
+    "message": "Activo"
   },
-  "activity": { 
+  "activity": {
     "message": "Actividad"
   },
   "activityLog": {
     "message": "registro de actividades"
   },
-  "addAccount": { 
+  "addAccount": {
     "message": "Agregar una cuenta"
   },
   "addAcquiredTokens": {
@@ -86,16 +86,16 @@
     "message": "Estoy de acuerdo"
   },
   "aggregatorFeeCost": {
-    "message": "Tarifa de red del agregador" 
+    "message": "Tarifa de red del agregador"
   },
-  "alertDisableTooltip": {  
-    "message": "Esto se puede cambiar en \"Configuración > Alertas\"" 
+  "alertDisableTooltip": {
+    "message": "Esto se puede cambiar en \"Configuración > Alertas\""
   },
-  "alertSettingsUnconnectedAccount": {  
-    "message": "Navegando un sitio web con una cuenta desconectada seleccionada"  
+  "alertSettingsUnconnectedAccount": {
+    "message": "Navegando un sitio web con una cuenta desconectada seleccionada"
   },
-  "alertSettingsUnconnectedAccountDescription": { 
-    "message": "Esta alerta se muestra en un popup cuando está navegando un sitio Web3, pero la cuenta seleccionada actualmente no está conectada." 
+  "alertSettingsUnconnectedAccountDescription": {
+    "message": "Esta alerta se muestra en un popup cuando está navegando un sitio Web3, pero la cuenta seleccionada actualmente no está conectada."
   },
   "alertSettingsWeb3ShimUsage": {
     "message": "Cuando un sitio intenta usar la window.web3 API eliminada"
@@ -141,17 +141,17 @@
     "message": "MetaMask",
     "description": "The name of the application"
   },
-  "approvalAndAggregatorTxFeeCost": { 
-    "message": "Tarifa de la red de aprobación y agregación"  
+  "approvalAndAggregatorTxFeeCost": {
+    "message": "Tarifa de la red de aprobación y agregación"
   },
-  "approvalTxGasCost": {  
-    "message": "Aprobación del Costo del Gas para la Tx" 
+  "approvalTxGasCost": {
+    "message": "Aprobación del Costo del Gas para la Tx"
   },
   "approve": {
     "message": "Aprobar"
   },
-  "approveSpendLimit": {  
-    "message": "Aprobar $1",  
+  "approveSpendLimit": {
+    "message": "Aprobar $1",
     "description": "The token symbol that is being approved"
   },
   "approved": {
@@ -160,7 +160,7 @@
   "asset": {
     "message": "Activo"
   },
-  "assets": { 
+  "assets": {
     "message": "Activos"
   },
   "attemptToCancel": {
@@ -175,7 +175,7 @@
   "attributions": {
     "message": "Atribuciones"
   },
-  "authorizedPermissions": {  
+  "authorizedPermissions": {
     "message": "Has autorizado los siguientes permisos"
   },
   "autoLockTimeLimit": {
@@ -811,7 +811,7 @@
   "importWallet": {
     "message": "Importar Monedero"
   },
-  "importYourExisting": { 
+  "importYourExisting": {
     "message": "Importa tu monedero existente usando la frase semilla de 12 palabras"
   },
   "imported": {
@@ -845,31 +845,31 @@
   "invalidBlockExplorerURL": {
     "message": "URL Inválida del Explorador de Bloques"
   },
-  "invalidCustomNetworkAlertContent1": {  
-    "message": "El ID de la cadena para la red personalizada '$1' tiene que ser re-ingresada.",  
-    "description": "$1 es el nombre/identificador de la red."  
-  },  
-  "invalidCustomNetworkAlertContent2": {  
-    "message": "Para protegerlo de proveedores de red maliciosos o con fallas, los IDs de cadenas son ahora requeridos para todas las redes personalizadas." 
-  },  
-  "invalidCustomNetworkAlertContent3": {  
-    "message": "Vaya a Configuración > Redes e ingrese el ID de la cadena. Puede obtener los IDs de las cadens más populares en $1.", 
-    "description": "$1 es un link a https://chainid.network"  
-  },  
-  "invalidCustomNetworkAlertTitle": { 
-    "message": "Red Personalizada Inválida" 
-  },  
-  "invalidHexNumber": { 
-    "message": "Número hexadecimal inválido."  
-  },  
-  "invalidHexNumberLeadingZeros": { 
-    "message": "Número hexadecimal inválido. Elimine los ceros iniciales."  
-  },  
-  "invalidIpfsGateway": { 
-    "message": "Puerta de enlace IPFS inválida: El valor debe ser una URL válida"  
+  "invalidCustomNetworkAlertContent1": {
+    "message": "El ID de la cadena para la red personalizada '$1' tiene que ser re-ingresada.",
+    "description": "$1 es el nombre/identificador de la red."
+  },
+  "invalidCustomNetworkAlertContent2": {
+    "message": "Para protegerlo de proveedores de red maliciosos o con fallas, los IDs de cadenas son ahora requeridos para todas las redes personalizadas."
+  },
+  "invalidCustomNetworkAlertContent3": {
+    "message": "Vaya a Configuración > Redes e ingrese el ID de la cadena. Puede obtener los IDs de las cadens más populares en $1.",
+    "description": "$1 es un link a https://chainid.network"
+  },
+  "invalidCustomNetworkAlertTitle": {
+    "message": "Red Personalizada Inválida"
+  },
+  "invalidHexNumber": {
+    "message": "Número hexadecimal inválido."
+  },
+  "invalidHexNumberLeadingZeros": {
+    "message": "Número hexadecimal inválido. Elimine los ceros iniciales."
+  },
+  "invalidIpfsGateway": {
+    "message": "Puerta de enlace IPFS inválida: El valor debe ser una URL válida"
   },
   "invalidNumber": {
-    "message": "Número inválido. Ingrese un número decimal o un hexadecimal con prefijo '0x'." 
+    "message": "Número inválido. Ingrese un número decimal o un hexadecimal con prefijo '0x'."
   },
   "invalidNumberLeadingZeros": {
     "message": "Número inválido. Elimine los ceros iniciales."
@@ -880,10 +880,10 @@
   "invalidSeedPhrase": {
     "message": "Frase semilla inválida."
   },
-  "ipfsGateway": {  
-    "message": "Puerta de enlace IPFS" 
+  "ipfsGateway": {
+    "message": "Puerta de enlace IPFS"
   },
-  "ipfsGatewayDescription": { 
+  "ipfsGatewayDescription": {
     "message": "Ingrese la URL de la puerta de enlace IPFS CID para usar resolución de contenido ENS."
   },
   "jsonFile": {
@@ -899,7 +899,7 @@
   "kovan": {
     "message": "Red de pruebas Kovan"
   },
-  "lastConnected": {  
+  "lastConnected": {
     "message": "Última vez Conectado"
   },
   "learnMore": {
@@ -926,7 +926,7 @@
   "loadingTokens": {
     "message": "Cargando tokens..."
   },
-  "localhost": {  
+  "localhost": {
     "message": "Localhost 8545"
   },
   "lock": {
@@ -942,64 +942,64 @@
     "message": "Máximo"
   },
   "memo": {
-    "message": "memo" 
+    "message": "memo"
   },
-  "memorizePhrase": { 
+  "memorizePhrase": {
     "message": "Memoriza esta frase."
   },
   "message": {
     "message": "Mensaje"
   },
-  "metaMaskConnectStatusParagraphOne": {  
-    "message": "Ahora tienes más control sobre tus conexiones a la cuenta en MetaMask." 
+  "metaMaskConnectStatusParagraphOne": {
+    "message": "Ahora tienes más control sobre tus conexiones a la cuenta en MetaMask."
   },
   "metaMaskConnectStatusParagraphThree": {
-    "message": "Clic para administrar tus cuentas conectadas."  
+    "message": "Clic para administrar tus cuentas conectadas."
   },
-  "metaMaskConnectStatusParagraphTwo": {  
+  "metaMaskConnectStatusParagraphTwo": {
     "message": "El botón de estado de conexión muestra si el sitio que está visitando se encuentra conectado a tu cuenta actualmente seleccionada."
   },
   "metamaskDescription": {
     "message": "Conectándote a Ethereum y la Web Descentralizada."
   },
-  "metamaskSwapsOfflineDescription": {  
+  "metamaskSwapsOfflineDescription": {
     "message": "Intercambios MetaMask está en mantenimiento. Por favor intente más tarde."
   },
   "metamaskVersion": {
     "message": "Versión de MetaMask"
   },
-  "metametricsCommitmentsAllowOptOut": {  
+  "metametricsCommitmentsAllowOptOut": {
     "message": "Siempre permitir optar por no participar a través de Configuración"
   },
-  "metametricsCommitmentsBoldNever": {  
-    "message": "Nunca", 
+  "metametricsCommitmentsBoldNever": {
+    "message": "Nunca",
     "description": "This string is localized separately from some of the commitments so that we can bold it"
   },
-  "metametricsCommitmentsIntro": {  
-    "message": "MetaMask va a.."  
+  "metametricsCommitmentsIntro": {
+    "message": "MetaMask va a.."
   },
-  "metametricsCommitmentsNeverCollectIP": { 
-    "message": "$1 recolecta tu dirección IP completa", 
+  "metametricsCommitmentsNeverCollectIP": {
+    "message": "$1 recolecta tu dirección IP completa",
     "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
   },
-  "metametricsCommitmentsNeverCollectKeysEtc": {  
-    "message": "$1 recolecta llaves, direcciones, transaccinoes, balances, hashes, o cualquier información personal", 
+  "metametricsCommitmentsNeverCollectKeysEtc": {
+    "message": "$1 recolecta llaves, direcciones, transaccinoes, balances, hashes, o cualquier información personal",
     "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
   },
-  "metametricsCommitmentsNeverSellDataForProfit": { 
-    "message": "$1 vende datos para lucrar. ¡Nunca!",  
+  "metametricsCommitmentsNeverSellDataForProfit": {
+    "message": "$1 vende datos para lucrar. ¡Nunca!",
     "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
   },
-  "metametricsCommitmentsSendAnonymizedEvents": { 
+  "metametricsCommitmentsSendAnonymizedEvents": {
     "message": "Enviar eventos de vista de página y clics anónimos"
   },
-  "metametricsHelpImproveMetaMask": { 
+  "metametricsHelpImproveMetaMask": {
     "message": "Ayúdanos a mejorar MetaMask"
   },
-  "metametricsOptInDescription": {  
-    "message": "A MetaMask le gustaría recopilar datos de uso para entender mejor cómo interactúan nuestros usuarios con la extensión. Estos datos van a ser usados, de forma continua, para mejorar la usabilidad y experiencia de uso de nuestro producto y el ecosistema Ethereum."  
+  "metametricsOptInDescription": {
+    "message": "A MetaMask le gustaría recopilar datos de uso para entender mejor cómo interactúan nuestros usuarios con la extensión. Estos datos van a ser usados, de forma continua, para mejorar la usabilidad y experiencia de uso de nuestro producto y el ecosistema Ethereum."
   },
-  "mobileSyncText": { 
+  "mobileSyncText": {
     "message": "Por favor, ingrese su contraseña ¡para confirmar que es usted!"
   },
   "mustSelectOne": {
@@ -1008,10 +1008,10 @@
   "myAccounts": {
     "message": "Mis cuentas"
   },
-  "myWalletAccounts": { 
-    "message": "Mis cuentas de monedero" 
+  "myWalletAccounts": {
+    "message": "Mis cuentas de monedero"
   },
-  "myWalletAccountsDescription": {  
+  "myWalletAccountsDescription": {
     "message": "Todas tus cuentas creadas con MetaMask serán automáticamente agregadas a esta sección."
   },
   "needEtherInWallet": {
@@ -1024,13 +1024,13 @@
   "negativeETH": {
     "message": "No se pueden mandar cantidades negativas de ETH"
   },
-  "networkName": {  
-    "message": "Nombre de la Red" 
+  "networkName": {
+    "message": "Nombre de la Red"
   },
-  "networkSettingsChainIdDescription": {  
+  "networkSettingsChainIdDescription": {
     "message": "El ID de la cadena es utilizado para firmar transacciones. Debe coincidir con el ID de la cadena devuelto por la red. Puede ingresar un número decimal o hexadecimal con prefijo '0x', pero se mostrará el número en decimal."
   },
-  "networkSettingsDescription": { 
+  "networkSettingsDescription": {
     "message": "Agregue y edite redes RPC personalizadas"
   },
   "networks": {
@@ -1042,8 +1042,8 @@
   "newAccount": {
     "message": "Nueva cuenta"
   },
-  "newAccountDetectedDialogMessage": {  
-    "message": "¡Nueva dirección detectada! Clic aquí para agregar a su libreta de direcciones."  
+  "newAccountDetectedDialogMessage": {
+    "message": "¡Nueva dirección detectada! Clic aquí para agregar a su libreta de direcciones."
   },
   "newAccountNumberName": {
     "message": "Cuenta $1",
@@ -1061,8 +1061,8 @@
   "newPassword": {
     "message": "Nueva contraseña (mínimo [8] caracteres)"
   },
-  "newToMetaMask": {  
-    "message": "¿Es nuevo en MetaMask?" 
+  "newToMetaMask": {
+    "message": "¿Es nuevo en MetaMask?"
   },
   "newTotal": {
     "message": "Nuevo total"
@@ -1073,8 +1073,8 @@
   "next": {
     "message": "Siguiente"
   },
-  "nextNonceWarning": { 
-    "message": "El nonce es más alto que el sugerido de $1",  
+  "nextNonceWarning": {
+    "message": "El nonce es más alto que el sugerido de $1",
     "description": "The next nonce according to MetaMask's internal logic"
   },
   "noAccountsFound": {
@@ -1083,8 +1083,8 @@
   "noAddressForName": {
     "message": "No se ha establecido ninguna dirección para este nombre."
   },
-  "noAlreadyHaveSeed": {  
-    "message": "No, ya tengo una frase semilla" 
+  "noAlreadyHaveSeed": {
+    "message": "No, ya tengo una frase semilla"
   },
   "noConversionRateAvailable": {
     "message": "No hay ninguna Tasa de Conversión Disponible"
@@ -1101,17 +1101,17 @@
   "noWebcamFoundTitle": {
     "message": "No se encontró a la webcam"
   },
-  "nonceField": { 
-    "message": "Personalizar el nonce de la transacción"  
+  "nonceField": {
+    "message": "Personalizar el nonce de la transacción"
   },
   "nonceFieldDescription": {
-    "message": "Habilite esto para cambiar el nonce (número de transacción) en las pantallas de confirmación. Esto es una funcionalidad avanzada, úsela con precaución."  
+    "message": "Habilite esto para cambiar el nonce (número de transacción) en las pantallas de confirmación. Esto es una funcionalidad avanzada, úsela con precaución."
   },
   "nonceFieldHeading": {
-    "message": "Nonce Personalizado" 
+    "message": "Nonce Personalizado"
   },
   "notCurrentAccount": {
-    "message": "¿Es esta la cuenta correcta? Es diferente de la cuenta actualmente seleccionada en su monedero" 
+    "message": "¿Es esta la cuenta correcta? Es diferente de la cuenta actualmente seleccionada en su monedero"
   },
   "notEnoughGas": {
     "message": "No hay suficiente gas"
@@ -1159,8 +1159,8 @@
   "parameters": {
     "message": "Parámetros"
   },
-  "participateInMetaMetrics": { 
-    "message": "Participa en MetaMetrics" 
+  "participateInMetaMetrics": {
+    "message": "Participa en MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
     "message": "Participa en MetaMetrics para ayudarnos a mejorar MetaMask"
@@ -1185,7 +1185,7 @@
     "message": "Has aprobado este permiso"
   },
   "permissionUncheckedIconDescription": {
-    "message": "No has aprobado este permiso"  
+    "message": "No has aprobado este permiso"
   },
   "permissions": {
     "message": "Permisos"
