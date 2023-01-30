@@ -3213,9 +3213,9 @@
     superstruct "^0.16.7"
 
 "@metamask/test-dapp@^5.2.1":
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/@metamask/test-dapp/-/test-dapp-5.2.1.tgz#a7591393eec6d15f5e4bddee567018444db372ff"
-  integrity sha512-p9Jt31RDAyVfzbNrPL3pFsYgFuren+saxSbeMlytU2LyKXkMIvxdpEYmyqWIvCoZvdBAc9LH/arXbeSSXJ+aMA==
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@metamask/test-dapp/-/test-dapp-5.3.0.tgz#cd5975db6ddbda4490fbfae72b44280c976f417c"
+  integrity sha512-lq9w7oZ46+Kzs2dPqOn1MsaRl8sC4rVpkjx4p0OhXT1naE50s25kDQm2zcxoJ2WzBJY0M4GttbkxcaNtQesjKg==
 
 "@metamask/types@^1.1.0":
   version "1.1.0"
